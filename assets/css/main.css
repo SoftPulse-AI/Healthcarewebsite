@@ -63,7 +63,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: Poppins;
 }
 
 a {
@@ -146,7 +146,7 @@ h6 {
   --background-color: rgba(255, 255, 255, 0);
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -170,6 +170,19 @@ h6 {
 .header .logo img {
   max-height: 70px;
   margin-right: 8px;
+}
+/* For screens smaller than 768px (tablet and mobile) */
+@media (max-width: 768px) {
+  .header .logo img {
+    max-height: 50px; /* Adjust this value as needed */
+  }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+  .header .logo img {
+    max-height: 40px; /* Further reduce the size for smaller screens */
+  }
 }
 
 .header .logo h1 {
@@ -197,14 +210,12 @@ h6 {
 }
 
 @media (max-width: 1200px) {
-  .header {
-    padding-top: 10px;
-  }
+
 
   .header .header-container {
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px 5px 10px 15px;
+
   }
 
   .header .logo {
@@ -471,7 +482,7 @@ h6 {
 }
 
 .footer .footer-top {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .footer .footer-about .logo {
@@ -700,7 +711,7 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
+
   height: 3px;
   background: var(--accent-color);
   left: 0;
@@ -718,7 +729,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   position: relative;
-  padding-top: 160px;
+  padding-top: 130px;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 50%, color-mix(in srgb, var(--accent-color), transparent 98%) 25%, transparent 50%);
 }
 
