@@ -723,84 +723,81 @@
 
       <section style="background-color: #f4faff; padding: 60px 20px;">
         <div style="text-align: center; margin-bottom: 40px;">
-          <h2 style="font-size: 32px; font-weight: bold; color: #007bff;">Why SoftPulseAI Technologies?</h2>
+          <h2 style="font-size: 32px; font-weight: bold; color: #007bff;">
+            Why SoftPulseAI Technologies?
+          </h2>
         </div>
       
-        <!-- Grid container -->
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-      
+        <!-- Add class 'hero-cards' here and remove inline grid styles -->
+        <div class="hero-cards">
           <!-- Individual Cards -->
-          <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
+          <div class="hero-card" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
             <i class="bi bi-lightbulb" style="font-size: 40px; color: #007bff;"></i>
             <h4 style="font-size: 20px; color: #007bff;">Cutting-edge AI & Healthcare Synergy</h4>
             <p style="font-size: 16px; color: #555;">Our solutions uniquely blend healthcare expertise with advanced AI capabilities, creating intelligent systems that augment clinical decision-making.</p>
           </div>
       
-          <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
+          <div class="hero-card" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
             <i class="bi bi-hospital" style="font-size: 40px; color: #007bff;"></i>
             <h4 style="font-size: 20px; color: #007bff;">End-to-end Hospital & Clinic Solutions</h4>
             <p style="font-size: 16px; color: #555;">From large hospital networks to small clinics, we provide comprehensive solutions that address the complete healthcare delivery workflow.</p>
           </div>
       
-          <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
+          <div class="hero-card" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
             <i class="bi bi-stack" style="font-size: 40px; color: #007bff;"></i>
             <h4 style="font-size: 20px; color: #007bff;">Modular and Scalable System</h4>
             <p style="font-size: 16px; color: #555;">Our architecture allows organizations to start with essential modules and expand as needed, ensuring solutions grow with your healthcare facility.</p>
           </div>
       
-          <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
+          <div class="hero-card" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
             <i class="bi bi-shield-lock" style="font-size: 40px; color: #007bff;"></i>
             <h4 style="font-size: 20px; color: #007bff;">Robust Security & Compliance</h4>
             <p style="font-size: 16px; color: #555;">Built with healthcare-specific security requirements in mind, our systems maintain the highest standards of data protection and regulatory compliance.</p>
           </div>
       
-          <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
+          <div class="hero-card" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
             <i class="bi bi-link-45deg" style="font-size: 40px; color: #007bff;"></i>
             <h4 style="font-size: 20px; color: #007bff;">Integration-ready AI Tools</h4>
             <p style="font-size: 16px; color: #555;">All our AI capabilities can integrate with existing systems through standard APIs, enabling enhancement of current infrastructure without replacement.</p>
           </div>
       
-          <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
+          <div class="hero-card" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center;">
             <i class="bi bi-currency-dollar" style="font-size: 40px; color: #007bff;"></i>
             <h4 style="font-size: 20px; color: #007bff;">Cost-effective & Time-saving</h4>
             <p style="font-size: 16px; color: #555;">Our solutions deliver measurable ROI through operational efficiency, reduced administrative burden, and optimized resource allocation.</p>
           </div>
-      
         </div> <!-- End of grid container -->
       
-        <!-- Responsive Design: Two columns for smaller screens -->
+        <!-- Responsive Design Styles -->
         <style>
-          /* Three columns for larger screens */
-          @media (min-width: 768px) {
+          .hero-cards {
+            display: grid;
+            gap: 20px;
+          }
+      
+          /* Three columns for large screens */
+          @media (min-width: 992px) {
             .hero-cards {
-              display: grid;
               grid-template-columns: repeat(3, 1fr);
-              gap: 20px;
             }
           }
       
-          /* Two columns for smaller screens */
-          @media (max-width: 768px) {
+          /* Two columns for medium screens */
+          @media (max-width: 991px) and (min-width: 577px) {
             .hero-cards {
-              display: grid;
               grid-template-columns: repeat(2, 1fr);
-              gap: 20px;
             }
           }
       
-          /* Single column for very small screens */
-          @media (max-width: 480px) {
+          /* One column for small screens */
+          @media (max-width: 576px) {
             .hero-cards {
-              display: block;
-              text-align: center;
-            }
-            .hero-card {
-              width: 100%;
-              margin-bottom: 20px;
+              grid-template-columns: 1fr;
             }
           }
         </style>
       </section>
+      
       
       <!-- End Features Section -->
  
